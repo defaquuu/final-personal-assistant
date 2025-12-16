@@ -1,0 +1,18 @@
+﻿name: 🎯 Трекер целей
+
+on:
+  schedule:
+    # Каждый понедельник утром
+    - cron: '0 9 * * 1'
+  
+  workflow_dispatch:
+    inputs:
+      goal:
+        description: 'Новая цель'
+        required: false
+        type: string
+      deadline:
+        description: 'Срок (ГГГГ-ММ-ДД)'
+        required: false
+        type: string
+      # ... остальные параметры
