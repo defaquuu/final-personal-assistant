@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vipil\\Desktop\\itog\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vipil\\Desktop\\itog\\.github\\workflows\\main-assistant.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\main-assistant.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vipil\\Desktop\\itog\\.github\\workflows\\goals-tracker.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\goals-tracker.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "main-assistant.yml",
+              "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\.github\\workflows\\main-assistant.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\main-assistant.yml",
+              "ToolTip": "C:\\Users\\vipil\\Desktop\\itog\\.github\\workflows\\main-assistant.yml",
+              "RelativeToolTip": ".github\\workflows\\main-assistant.yml",
+              "ViewState": "AgIAALQAAAAAAAAAAAAcwNkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-16T10:18:35.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "task-manager.yml",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\.github\\workflows\\task-manager.yml",
               "RelativeDocumentMoniker": ".github\\workflows\\task-manager.yml",
@@ -54,12 +71,11 @@
               "RelativeToolTip": ".github\\workflows\\task-manager.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-12-16T10:12:48.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T10:12:48.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "goals-tracker.yml",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\.github\\workflows\\goals-tracker.yml",
               "RelativeDocumentMoniker": ".github\\workflows\\goals-tracker.yml",
@@ -72,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "stats.json",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\stats.json",
               "RelativeDocumentMoniker": "stats.json",
@@ -80,12 +96,11 @@
               "RelativeToolTip": "stats.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-16T10:12:04.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T10:12:04.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "goals.json",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\goals.json",
               "RelativeDocumentMoniker": "goals.json",
@@ -93,12 +108,11 @@
               "RelativeToolTip": "goals.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-16T10:11:54.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T10:11:54.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "tasks.json",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\tasks.json",
               "RelativeDocumentMoniker": "tasks.json",
@@ -106,12 +120,11 @@
               "RelativeToolTip": "tasks.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-16T10:11:48.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T10:11:48.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "messages_database.json",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\messages_database.json",
               "RelativeDocumentMoniker": "messages_database.json",
@@ -119,12 +132,11 @@
               "RelativeToolTip": "messages_database.json",
               "ViewState": "AgIAAAoAAAAAAAAAAAAYwC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-16T10:11:40.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T10:11:40.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "data_structure.yaml",
               "DocumentMoniker": "C:\\Users\\vipil\\Desktop\\itog\\data_structure.yaml",
               "RelativeDocumentMoniker": "data_structure.yaml",
@@ -132,8 +144,7 @@
               "RelativeToolTip": "data_structure.yaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAcwC4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-12-16T10:11:34.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T10:11:34.146Z"
             },
             {
               "$type": "Bookmark",
