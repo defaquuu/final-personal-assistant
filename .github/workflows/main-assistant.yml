@@ -187,10 +187,10 @@ jobs:
             ${{ steps.generate_content.outputs.content }}
             
             📅 *Дата:* ${{ steps.time_of_day.outputs.today }}
-            🕐 *Время UTC:* $(date -u +"%H:%M")
+            🕐 *Время UTC:* ${{ steps.time_of_day.outputs.current_hour }}:00
             
             ✍️ *ОТВЕТЬ НА ЭТО СООБЩЕНИЕ С ТВОИМИ ПЛАНАМИ!*
-          parse_mode: markdown
+          format: markdown
       
       - name: 💾 Обновляем статистику
         run: |
