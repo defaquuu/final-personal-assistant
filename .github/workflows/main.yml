@@ -1,0 +1,99 @@
+name: 🚀 CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 8 * * *'  # Каждое утро в 8:00
+    - cron: '0 20 * * *' # Каждый вечер в 20:00
+  workflow_dispatch:      # Ручной запуск
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: 🐍 Установка Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: 📦 Установка зависимостей
+        run: |
+          pip install -r requirements.txt
+          
+      - name: 🧪 Запуск тестов
+        run: |
+          python -m pytest tests/ -v
+
+  telegram-notification:
+    runs-on: ubuntu-latest
+    needs: test
+    if: success()
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: 📨 Отправка уведомления в Telegram
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            ✅ *Проект успешно обновлён!*
+            
+            📊 *Детали:*
+            • Репозиторий: ${{ github.repository }}
+            • Ветка: ${{ github.ref }}
+            • Автор: ${{ github.actor }}
+            • Время: ${{ github.event.head_commit.timestamp }}
+            
+            🚀 Бот готов к работе!
+          parse_mode: markdown
+
+  daily-reminder:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    steps:
+      - name: 🌅 Утреннее напоминание
+        if: github.event.schedule == '0 8 * * *'
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🌞 *Доброе утро!*
+            
+            📅 Сегодня:
+            • Математика - 9:00
+            • Программирование - 11:00
+            
+            📝 Задания на сегодня:
+            1. Сделать ДЗ по математике
+            2. Подготовиться к семинару
+            
+            💪 Удачи в учёбе!
+          parse_mode: markdown
+          
+      - name: 🌙 Вечерний отчет
+        if: github.event.schedule == '0 20 * * *'
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🌙 *Добрый вечер!*
+            
+            🏆 *Итоги дня:*
+            • Выполнено заданий: 3/5
+            • Потрачено времени: 4.5 часа
+            • Прогресс по целям: +10%
+            
+            📋 *На завтра:*
+            1. Физика - лабораторная
+            2. Алгоритмы - проект
+            
+            🛌 Хорошего отдыха!
+          parse_mode: markdown
